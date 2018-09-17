@@ -33,7 +33,7 @@ var NexusHTMLParser = /** @class */ (function (_super) {
                 title: doc.title,
                 contentRootAttributes: util_1.getAttributesObject(contentRoot.attributes),
                 bodyAttributes: util_1.getAttributesObject(doc.body.attributes),
-                htmlAttributes: util_1.getAttributesObject(doc.documentElement.attributes)
+                htmlAttributes: util_1.getAttributesObject(doc.documentElement.attributes),
             };
         }
         else {

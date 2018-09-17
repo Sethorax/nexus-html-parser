@@ -34,7 +34,7 @@ var getAttributesObject = function (map) {
     for (var i = 0; i < map.length; i++) {
         attributes.push({
             name: map[i].name,
-            value: map[i].value
+            value: map[i].value,
         });
     }
     return attributes;
@@ -58,7 +58,7 @@ var NexusHTMLParser = /** @class */ (function (_super) {
                 title: doc.title,
                 contentRootAttributes: getAttributesObject(contentRoot.attributes),
                 bodyAttributes: getAttributesObject(doc.body.attributes),
-                htmlAttributes: getAttributesObject(doc.documentElement.attributes)
+                htmlAttributes: getAttributesObject(doc.documentElement.attributes),
             };
         }
         else {
